@@ -3,7 +3,7 @@ function script(conteudo) {
     var output = "";
     for (let index = vetH2.length - 1; index >= 0; index--) {
         if (vetH2[index].innerText.trim() != "Use saved searches to filter your results more quickly" && vetH2[index].innerText.trim() != "Navigation Menu" && vetH2[index].innerText.trim() != "Footer")
-            output += vetH2[index].innerText + "<br>";
+            output += vetH2[index].innerText.replace("./", "") + "<br>";
     }
     newpopupWindow = window.open('', 'pagina', "width=400 height=400");
     newpopupWindow.document.write("");
@@ -15,7 +15,7 @@ function script2(conteudo) {
     var output = "";
     for (let index = 0; index < vetH2.length; index++) {
         if (vetH2[index].innerText.trim() != "Use saved searches to filter your results more quickly" && vetH2[index].innerText.trim() != "Navigation Menu" && vetH2[index].innerText.trim() != "Footer")
-            output += vetH2[index].innerText + "<br>";
+            output += vetH2[index].innerText.replace("./", "") + "<br>";
     }
     newpopupWindow = window.open('', 'pagina', "width=400 height=400");
     newpopupWindow.document.write("");
