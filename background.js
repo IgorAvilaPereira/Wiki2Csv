@@ -12,7 +12,7 @@ function script(conteudo) {
     }
     newpopupWindow = window.open('', 'pagina', "width=400 height=400");
     newpopupWindow.document.write("");
-    newpopupWindow.document.write(output);
+    newpopupWindow.document.write(output.trim());
 }
 
 function script2(conteudo) {
@@ -28,7 +28,7 @@ function script2(conteudo) {
     }
     newpopupWindow = window.open('', 'pagina', "width=400 height=400");
     newpopupWindow.document.write("");
-    newpopupWindow.document.write(output);
+    newpopupWindow.document.write(output.trim());
 }
 
 document.addEventListener("DOMContentLoaded", function() {
